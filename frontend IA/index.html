@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darlene Atuncar | Creative Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <canvas id="particles"></canvas>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">[</span><span class="logo-dot"></span><span class="logo-text">DEV</span><span class="logo-dot"></span><span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                <li><a href="#about" class="nav-link">Sobre mi</a></li>
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link nav-link--glow">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" id="hero">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-hud-lines">
+            <div class="hud-line hud-line-1"></div>
+            <div class="hud-line hud-line-2"></div>
+            <div class="hud-line hud-line-3"></div>
+            <div class="hud-line hud-line-4"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="text-gradient">Darlene Atuncar</span>
+                </h1>
+                <p class="hero-subtitle">Creative <span class="text-typing" id="typing"></span></p>
+                <p class="hero-description">Transformo ideas en experiencias digitales increibles. Ingeniero de Sistemas apasionado por el diseno moderno, la arquitectura de software y el codigo elegante.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-glow">
+                        <span>Ver Proyectos</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">Contactar</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </header>
+
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// SOBRE MI</span>
+                <h2 class="section-title">Quien soy</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <div class="about-avatar">
+                            <img src="yo.jpeg" alt="Darlene Atuncar" class="about-photo">
+                        </div>
+                        <div class="about-ring"></div>
+                        <div class="about-ring about-ring-2"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-text lead">Soy un desarrollador Full Stack con pasion por crear experiencias digitales unicas y memorables.</p>
+                    <p class="about-text">Con mas de 3 anos de experiencia, he trabajado en proyectos que van desde startups hasta empresas establecidas, siempre buscando la excelencia y el diseno innovador.</p>
+                    <p class="about-text">Mi enfoque combina codigo limpio, interfaces intuitivas y las tecnologias mas modernas del mercado.</p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            </div>
+                            <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Anos de experiencia</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            </div>
+                            <span class="stat-number" data-count="25">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Proyectos entregados</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+                            </div>
+                            <span class="stat-number" data-count="15">0</span><span class="stat-plus">+</span>
+                            <span class="stat-label">Clientes felices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// SERVICIOS</span>
+                <h2 class="section-title">Lo que hago</h2>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel" id="servicesCarousel">
+                    <div class="carousel-track">
+                        <div class="service-card" data-color="purple">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                            </div>
+                            <h3 class="service-title">Desarrollo de Software</h3>
+                            <p class="service-desc">Aplicaciones empresariales robustas con arquitecturas MVC, patrones de diseno y metodologias agiles.</p>
+                            <div class="service-tags"><span>Java</span><span>C#</span><span>.NET</span><span>SQL Server</span></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-card" data-color="blue">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            </div>
+                            <h3 class="service-title">Ingenieria de Redes</h3>
+                            <p class="service-desc">Diseno, implementacion y administracion de infraestructura de red corporativa y telecomunicaciones.</p>
+                            <div class="service-tags"><span>Cisco</span><span>TCP/IP</span><span>MikroTik</span><span>Switches</span></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-card" data-color="pink">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <h3 class="service-title">Ciberseguridad</h3>
+                            <p class="service-desc">Auditorias de seguridad, pruebas de penetracion, hardening de sistemas y respuesta a incidentes.</p>
+                            <div class="service-tags"><span>Kali</span><span>Wireshark</span><span>Metasploit</span><span>Nmap</span></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-card" data-color="cyan">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+                            </div>
+                            <h3 class="service-title">Cloud & DevOps</h3>
+                            <p class="service-desc">Migracion a la nube, containers, integracion continua y despliegue automatizado de infraestructura.</p>
+                            <div class="service-tags"><span>AWS</span><span>Docker</span><span>Jenkins</span><span>CI/CD</span></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-card" data-color="green">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                            </div>
+                            <h3 class="service-title">Bases de Datos</h3>
+                            <p class="service-desc">Diseno relacional y NoSQL, optimizacion de queries, replicacion, respaldos y administracion.</p>
+                            <div class="service-tags"><span>MySQL</span><span>PostgreSQL</span><span>Oracle</span><span>MongoDB</span></div>
+                            <div class="service-glow"></div>
+                        </div>
+                        <div class="service-card" data-color="orange">
+                            <div class="service-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2M9 2v2M15 20v2M9 20v2M2 15h2M2 9h2M20 15h2M20 9h2"/></svg>
+                            </div>
+                            <h3 class="service-title">Sistemas Embebidos</h3>
+                            <p class="service-desc">Programacion de microcontroladores, IoT, domotica y soluciones de automatizacion con hardware.</p>
+                            <div class="service-tags"><span>Arduino</span><span>Raspberry Pi</span><span>C</span><span>IoT</span></div>
+                            <div class="service-glow"></div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-btn-prev" aria-label="Anterior">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="carousel-btn carousel-btn-next" aria-label="Siguiente">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+                <div class="carousel-dots" id="servicesDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// PROYECTOS</span>
+                <h2 class="section-title">Trabajo reciente</h2>
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel carousel-projects" id="projectsCarousel">
+                    <div class="carousel-track">
+                        <article class="project-card">
+                            <div class="project-bg" style="background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);"></div>
+                            <div class="project-overlay"></div>
+                            <div class="project-content">
+                                <span class="project-year">2024</span>
+                                <h3 class="project-name">E-Commerce Platform</h3>
+                                <p class="project-desc">Plataforma completa de comercio electronico con carrito, pagos y dashboard admin en tiempo real.</p>
+                                <div class="project-tech">
+                                    <span>React</span><span>Node.js</span><span>MongoDB</span><span>Stripe</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="project-cta">Ver proyecto <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+                                    <a href="#" class="project-cta project-cta-outline">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-bg" style="background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);"></div>
+                            <div class="project-overlay"></div>
+                            <div class="project-content">
+                                <span class="project-year">2024</span>
+                                <h3 class="project-name">AI Task Manager</h3>
+                                <p class="project-desc">App de gestion inteligente con drag & drop, sync real-time y sugerencias de IA.</p>
+                                <div class="project-tech">
+                                    <span>Vue.js</span><span>Firebase</span><span>OpenAI</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="project-cta">Ver proyecto <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+                                    <a href="#" class="project-cta project-cta-outline">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-bg" style="background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);"></div>
+                            <div class="project-overlay"></div>
+                            <div class="project-content">
+                                <span class="project-year">2024</span>
+                                <h3 class="project-name">Sistema QA Automatizado</h3>
+                                <p class="project-desc">Plataforma de testing automatizado con reportes, metrics y integracion CI/CD.</p>
+                                <div class="project-tech">
+                                    <span>Python</span><span>Playwright</span><span>Docker</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="project-cta">Ver proyecto <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+                                    <a href="#" class="project-cta project-cta-outline">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-bg" style="background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);"></div>
+                            <div class="project-overlay"></div>
+                            <div class="project-content">
+                                <span class="project-year">2023</span>
+                                <h3 class="project-name">HealthTrack Dashboard</h3>
+                                <p class="project-desc">Dashboard de salud con graficos interactivos, seguimiento de habitos y reportes PDF.</p>
+                                <div class="project-tech">
+                                    <span>React</span><span>Chart.js</span><span>PostgreSQL</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="project-cta">Ver proyecto <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+                                    <a href="#" class="project-cta project-cta-outline">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-bg" style="background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);"></div>
+                            <div class="project-overlay"></div>
+                            <div class="project-content">
+                                <span class="project-year">2023</span>
+                                <h3 class="project-name">ChatBot IA Empresarial</h3>
+                                <p class="project-desc">Chatbot con procesamiento de lenguaje natural, base de conocimiento y analytics.</p>
+                                <div class="project-tech">
+                                    <span>Python</span><span>FastAPI</span><span>LangChain</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="project-cta">Ver proyecto <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+                                    <a href="#" class="project-cta project-cta-outline">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="project-card">
+                            <div class="project-bg" style="background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);"></div>
+                            <div class="project-overlay"></div>
+                            <div class="project-content">
+                                <span class="project-year">2023</span>
+                                <h3 class="project-name">API Gateway Microservices</h3>
+                                <p class="project-desc">Arquitectura de microservicios con gateway, auth, rate limiting y monitoreo.</p>
+                                <div class="project-tech">
+                                    <span>Node.js</span><span>Docker</span><span>Redis</span><span>K8s</span>
+                                </div>
+                                <div class="project-buttons">
+                                    <a href="#" class="project-cta">Ver proyecto <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
+                                    <a href="#" class="project-cta project-cta-outline">GitHub</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <button class="carousel-btn carousel-btn-prev" aria-label="Anterior">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <button class="carousel-btn carousel-btn-next" aria-label="Siguiente">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+                <div class="carousel-dots" id="projectsDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// SKILLS</span>
+                <h2 class="section-title">Tecnologias</h2>
+            </div>
+            <div class="skills-categories">
+                <div class="skill-category" data-category="frontend">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">React</span><div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Vue.js</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">TypeScript</span><div class="skill-bar"><div class="skill-fill" style="--fill: 88%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Tailwind CSS</span><div class="skill-bar"><div class="skill-fill" style="--fill: 92%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Next.js</span><div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="backend">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Node.js</span><div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Express</span><div class="skill-bar"><div class="skill-fill" style="--fill: 88%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">FastAPI</span><div class="skill-bar"><div class="skill-fill" style="--fill: 82%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">GraphQL</span><div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="database">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        </div>
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" style="--fill: 88%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">MongoDB</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Redis</span><div class="skill-bar"><div class="skill-fill" style="--fill: 78%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" style="--fill: 82%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="tools">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--fill: 92%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Docker</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Figma</span><div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="qa">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        </div>
+                        <h3>QA</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Jest</span><div class="skill-bar"><div class="skill-fill" style="--fill: 88%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Cypress</span><div class="skill-bar"><div class="skill-fill" style="--fill: 82%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Playwright</span><div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Postman</span><div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div></div>
+                    </div>
+                </div>
+                <div class="skill-category" data-category="ai">
+                    <div class="skill-cat-header">
+                        <div class="skill-cat-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a2 2 0 012 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 017 7h1a1 1 0 011 1v3a1 1 0 01-1 1h-1v1a2 2 0 01-2 2H5a2 2 0 01-2-2v-1H2a1 1 0 01-1-1v-3a1 1 0 011-1h1a7 7 0 017-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 012-2z"/><circle cx="12" cy="14" r="3"/></svg>
+                        </div>
+                        <h3>AI</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">TensorFlow</span><div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">OpenAI API</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">LangChain</span><div class="skill-bar"><div class="skill-fill" style="--fill: 78%"></div></div></div>
+                        <div class="skill-item"><span class="skill-name">Scikit-learn</span><div class="skill-bar"><div class="skill-fill" style="--fill: 72%"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// CONTACTO</span>
+                <h2 class="section-title">Hablemos</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p class="contact-lead">Tienes un proyecto en mente? Me encantaria escuchar tu idea y ayudarte a hacerla realidad.</p>
+                    <div class="contact-links">
+                        <a href="mailto:tu@email.com" class="contact-link-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <span>tu@email.com</span>
+                        </a>
+                        <a href="#" class="contact-link-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Perú, Lima</span>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Nombre</label>
+                            <div class="form-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Email</label>
+                            <div class="form-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Mensaje</label>
+                        <div class="form-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-glow btn-submit">
+                        <span>Enviar Mensaje</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="nav-logo"><span class="logo-bracket">[</span><span class="logo-dot"></span><span class="logo-text">DEV</span><span class="logo-dot"></span><span class="logo-bracket">]</span></a>
+                <p class="footer-text">&copy; 2026 Darlene Atuncar. Hecho con pasion.</p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                    <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
