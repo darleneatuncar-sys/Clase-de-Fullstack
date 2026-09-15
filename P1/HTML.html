@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript</title>
+</head>
+<body>
+<ul id="lista"></ul>
+<button id="btnAgregar">Agregar elemento</button>
+<script>
+const lista = document.getElementById("lista");
+const boton = document.getElementById("btnAgregar");
+boton.addEventListener("click", () => {
+const li = document.createElement("li"); // crea un nuevo <li>
+li.textContent = "JavaScript"; // agrega texto al <li>
+lista.appendChild(li); // inserta el <li> dentro del <ul>
+});
+</script>
+
+</body>
+</html>

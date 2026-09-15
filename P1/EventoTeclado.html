@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo keydown</title>
+</head>
+<body>
+<h1>Presiona una tecla</h1>
+<p id="resultado"></p>
+<script>
+const resultado = document.getElementById("resultado");
+document.addEventListener("keydown", (evento) => {
+console.log("Tecla:", evento.key); // se ve en consola
+alert("Tecla presionada!");
+resultado.textContent = "Presionaste: " + evento.key; // se ve en la página
+});
+</script>
+</body>
+</html>

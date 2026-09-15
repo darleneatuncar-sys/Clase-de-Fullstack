@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Darlene Atuncar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Darlene Atuncar</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre Mi</h2>
+            <p>Soy estudiante de la carrera de Tecnologías de la Información, apasionada por el desarrollo web y el diseño de interfaces. Actualmente me encuentro aprendiendo las bases de HTML5, CSS3 y JavaScript para crear páginas web modernas y funcionales.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyecto">
+                <h3>Proyecto 1 - Página Personal</h3>
+                <p>Página web personal con HTML5 y CSS3.</p>
+            </div>
+            <div class="proyecto">
+                <h3>Proyecto 2 - Formulario</h3>
+                <p>Formulario de contacto con validación.</p>
+            </div>
+            <div class="proyecto">
+                <h3>Proyecto 3 - Portafolio</h3>
+                <p>Portafolio con diseño responsivo.</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre"><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="5"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <section id="display">
+            <h2>Display Properties</h2>
+
+            <h3>Display: block</h3>
+            <div class="block-item">Bloque 1</div>
+            <div class="block-item">Bloque 2</div>
+
+            <h3>Display: inline</h3>
+            <span class="inline-item">A</span>
+            <span class="inline-item">B</span>
+            <span class="inline-item">C</span>
+
+            <h3>Display: inline-block</h3>
+            <span class="inline-block-item">A</span>
+            <span class="inline-block-item">B</span>
+            <span class="inline-block-item">C</span>
+
+            <h3>Display: none</h3>
+            <div class="none-item">Este elemento no se ve</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Darlene Atuncar - Portafolio</p>
+    </footer>
+
+</body>
+</html>
